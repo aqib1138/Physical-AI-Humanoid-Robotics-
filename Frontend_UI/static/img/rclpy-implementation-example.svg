@@ -1,0 +1,88 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- rclpy Implementation and AI Agent Bridging Diagram -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="20" fill="#000000">
+    rclpy Implementation and AI Agent Bridging
+  </text>
+
+  <!-- AI Agent -->
+  <rect x="50" y="100" width="200" height="100" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" rx="10" ry="10"/>
+  <text x="150" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000">
+    AI Agent
+  </text>
+  <text x="150" y="160" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">
+    (Neural Network, RL, etc.)
+  </text>
+
+  <!-- ROS 2 Node with rclpy -->
+  <rect x="300" y="100" width="200" height="100" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="10" ry="10"/>
+  <text x="400" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000">
+    ROS 2 Node
+  </text>
+  <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">
+    (rclpy-based)
+  </text>
+
+  <!-- Robot Controller -->
+  <rect x="550" y="100" width="200" height="100" fill="#f6ffed" stroke="#52c41a" stroke-width="2" rx="10" ry="10"/>
+  <text x="650" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000">
+    Robot Controller
+  </text>
+  <text x="650" y="160" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">
+    (Hardware Interface)
+  </text>
+
+  <!-- Perception Layer -->
+  <rect x="100" y="250" width="150" height="80" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="10" ry="10"/>
+  <text x="175" y="285" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000">
+    Perception
+  </text>
+  <text x="175" y="305" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">
+    Layer
+  </text>
+
+  <!-- Planning Layer -->
+  <rect x="325" y="250" width="150" height="80" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="10" ry="10"/>
+  <text x="400" y="285" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000">
+    Planning
+  </text>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">
+    Layer
+  </text>
+
+  <!-- Actuation Layer -->
+  <rect x="550" y="250" width="150" height="80" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="10" ry="10"/>
+  <text x="625" y="285" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000">
+    Actuation
+  </text>
+  <text x="625" y="305" text-anchor="middle" font-family="Arial" font-size="12" fill="#333333">
+    Layer
+  </text>
+
+  <!-- Arrows showing communication -->
+  <line x1="250" y1="150" x2="300" y2="150" stroke="#1890ff" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="275" y="135" text-anchor="middle" font-family="Arial" font-size="12" fill="#1890ff">Commands</text>
+
+  <line x1="500" y1="150" x2="550" y2="150" stroke="#52c41a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="525" y="135" text-anchor="middle" font-family="Arial" font-size="12" fill="#52c41a">Control</text>
+
+  <line x1="175" y1="250" x2="175" y2="200" stroke="#fa8c16" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="190" y="225" text-anchor="start" font-family="Arial" font-size="10" fill="#fa8c16">Sensor</text>
+  <text x="190" y="238" text-anchor="start" font-family="Arial" font-size="10" fill="#fa8c16">Data</text>
+
+  <line x1="400" y1="250" x2="400" y2="200" stroke="#fa8c16" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="415" y="225" text-anchor="start" font-family="Arial" font-size="10" fill="#fa8c16">Plan</text>
+
+  <line x1="625" y1="250" x2="625" y2="200" stroke="#fa8c16" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="640" y="225" text-anchor="start" font-family="Arial" font-size="10" fill="#fa8c16">Commands</text>
+
+  <!-- Message passing arrows between layers -->
+  <line x1="250" y1="290" x2="325" y2="290" stroke="#fa8c16" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="475" y1="290" x2="550" y2="290" stroke="#fa8c16" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666666" />
+    </marker>
+  </defs>
+</svg>

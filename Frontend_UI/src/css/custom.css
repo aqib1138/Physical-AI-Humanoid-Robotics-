@@ -1,0 +1,248 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2563eb; /* Brighter blue for primary color */
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-color-content: #1a1a1a; /* Darker content text */
+  --ifm-color-content-secondary: #333333; /* Secondary darker text */
+  --ifm-heading-color: #1a1a1a; /* Darker heading color */
+  --ifm-link-color: #2563eb; /* Consistent link color */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-background-color: #f8fafc; /* Light blue-gray background */
+  --ifm-navbar-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  --ifm-footer-background-color: #f8fafc; /* Light footer to match header */
+}
+
+/* Enhanced navbar styling for better visibility and user experience */
+.navbar {
+  background-color: var(--ifm-navbar-background-color);
+  box-shadow: var(--ifm-navbar-shadow);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar__title {
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  margin-right: 0.5rem;
+}
+
+/* Enhanced sidebar styling to match the header */
+.menu {
+  border-right: 1px solid #e2e8f0;
+}
+
+.menu__link {
+  color: #334155;
+}
+
+.menu__link:hover {
+  background-color: #f1f5f9;
+  color: var(--ifm-color-primary);
+}
+
+.menu__link--active {
+  background-color: #dbeafe;
+  color: var(--ifm-color-primary);
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Enhanced header styling for better readability */
+.header-gradient {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Enhanced button styling */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-darker);
+  border-color: var(--ifm-color-primary-darker);
+}
+
+/* Enhanced card styling for better visual appeal */
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+  --ifm-navbar-background-color: #1e293b; /* Darker navbar for dark mode */
+  --ifm-footer-background-color: #1e293b; /* Darker footer for dark mode */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Dark mode navbar styling */
+[data-theme='dark'] .navbar {
+  background-color: var(--ifm-navbar-background-color);
+  border-bottom: 1px solid #334155;
+}
+
+[data-theme='dark'] .navbar__title {
+  color: #f1f5f9;
+}
+
+[data-theme='dark'] .menu {
+  border-right: 1px solid #334155;
+}
+
+[data-theme='dark'] .menu__link {
+  color: #cbd5e1;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background-color: #334155;
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .menu__link--active {
+  background-color: #1e3a8a;
+  color: var(--ifm-color-primary);
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Accessibility enhancements for academic content */
+/* Ensure sufficient color contrast */
+:root {
+  --ifm-color-emphasis-0: #000000;
+  --ifm-color-emphasis-100: #1c1e21;
+  --ifm-color-emphasis-200: #34383c;
+  --ifm-color-emphasis-300: #4f5357;
+  --ifm-color-emphasis-400: #6b7177;
+  --ifm-color-emphasis-500: #878d96;
+  --ifm-color-emphasis-600: #a3a8af;
+  --ifm-color-emphasis-700: #bfc3c8;
+  --ifm-color-emphasis-800: #dbdde1;
+  --ifm-color-emphasis-900: #f2f3f5;
+  --ifm-color-emphasis-1000: #ffffff;
+}
+
+/* Enhance focus indicators for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Increase font size for better readability */
+html {
+  font-size: 100%;
+}
+
+/* Ensure proper heading hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--ifm-heading-font-weight);
+  line-height: var(--ifm-heading-line-height);
+}
+
+/* Improve link accessibility */
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Academic content specific styles */
+.citation {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  text-indent: -1.2rem;
+}
+
+.figure {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.figure-caption {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Ensure responsive design for different screen sizes */
+@media (max-width: 996px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+
+/* Code block accessibility */
+.prism-code {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Table accessibility */
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid var(--ifm-table-border-color);
+}
+
+.table th {
+  vertical-align: bottom;
+  border-bottom: 2px solid var(--ifm-table-border-color);
+}

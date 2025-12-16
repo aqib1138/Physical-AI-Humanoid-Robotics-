@@ -1,0 +1,209 @@
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- URDF Structure and Kinematic Chains Diagram -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="450" y="40" text-anchor="middle" font-family="Arial" font-size="20" fill="#000000">
+    URDF Structure and Kinematic Chains
+  </text>
+
+  <!-- Title boxes -->
+  <text x="200" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000" font-weight="bold">
+    URDF Structure
+  </text>
+  <text x="650" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000" font-weight="bold">
+    Kinematic Chains
+  </text>
+
+  <!-- URDF Structure Visualization -->
+  <!-- Base/Torso -->
+  <rect x="100" y="120" width="120" height="60" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" rx="10" ry="10"/>
+  <text x="160" y="150" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000">
+    base_link
+  </text>
+  <text x="160" y="165" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    (torso)
+  </text>
+
+  <!-- Head -->
+  <rect x="100" y="200" width="120" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="160" y="225" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    head_link
+  </text>
+
+  <!-- Left Arm Chain -->
+  <rect x="40" y="260" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="90" y="285" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    left_shoulder
+  </text>
+
+  <rect x="40" y="320" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="90" y="345" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    left_elbow
+  </text>
+
+  <rect x="40" y="380" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="90" y="405" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    left_hand
+  </text>
+
+  <!-- Right Arm Chain -->
+  <rect x="180" y="260" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="230" y="285" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    right_shoulder
+  </text>
+
+  <rect x="180" y="320" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="230" y="345" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    right_elbow
+  </text>
+
+  <rect x="180" y="380" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="230" y="405" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    right_hand
+  </text>
+
+  <!-- Left Leg Chain -->
+  <rect x="40" y="440" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="90" y="465" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    left_hip
+  </text>
+
+  <rect x="40" y="500" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="90" y="525" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    left_knee
+  </text>
+
+  <rect x="40" y="560" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="90" y="585" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    left_foot
+  </text>
+
+  <!-- Right Leg Chain -->
+  <rect x="180" y="440" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="230" y="465" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    right_hip
+  </text>
+
+  <rect x="180" y="500" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="230" y="525" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    right_knee
+  </text>
+
+  <rect x="180" y="560" width="100" height="40" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="8" ry="8"/>
+  <text x="230" y="585" text-anchor="middle" font-family="Arial" font-size="11" fill="#000000">
+    right_foot
+  </text>
+
+  <!-- URDF Hierarchy Lines -->
+  <line x1="160" y1="180" x2="160" y2="200" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="160" y1="180" x2="90" y2="260" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="160" y1="180" x2="230" y2="260" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="160" y1="180" x2="90" y2="440" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="160" y1="180" x2="230" y2="440" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="90" y1="300" x2="90" y2="320" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="90" y1="360" x2="90" y2="380" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="230" y1="300" x2="230" y2="320" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="230" y1="360" x2="230" y2="380" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="90" y1="480" x2="90" y2="500" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="90" y1="540" x2="90" y2="560" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <line x1="230" y1="480" x2="230" y2="500" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="230" y1="540" x2="230" y2="560" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Kinematic Chains Visualization -->
+  <!-- Forward Kinematics -->
+  <rect x="550" y="120" width="180" height="60" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="10" ry="10"/>
+  <text x="640" y="145" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000">
+    Forward Kinematics
+  </text>
+  <text x="640" y="165" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Joint angles → End effector position
+  </text>
+
+  <!-- Inverse Kinematics -->
+  <rect x="550" y="200" width="180" height="60" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="10" ry="10"/>
+  <text x="640" y="225" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000">
+    Inverse Kinematics
+  </text>
+  <text x="640" y="245" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Desired position → Joint angles
+  </text>
+
+  <!-- Joint Limits -->
+  <rect x="550" y="280" width="180" height="60" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="10" ry="10"/>
+  <text x="640" y="305" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000">
+    Joint Limits
+  </text>
+  <text x="640" y="325" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Range of motion constraints
+  </text>
+
+  <!-- Chain Visualization -->
+  <text x="580" y="370" text-anchor="start" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Example Arm Chain:
+  </text>
+
+  <!-- Chain representation -->
+  <circle cx="580" cy="390" r="8" fill="#1890ff" stroke="#1890ff" stroke-width="1"/>
+  <text x="580" y="405" text-anchor="middle" font-family="Arial" font-size="10" fill="#000000">
+    Base
+  </text>
+
+  <line x1="588" y1="390" x2="620" y2="390" stroke="#1890ff" stroke-width="3"/>
+  <circle cx="620" cy="390" r="8" fill="#52c41a" stroke="#52c41a" stroke-width="1"/>
+  <text x="620" y="405" text-anchor="middle" font-family="Arial" font-size="10" fill="#000000">
+    Joint
+  </text>
+
+  <line x1="628" y1="390" x2="660" y2="390" stroke="#1890ff" stroke-width="3"/>
+  <circle cx="660" cy="390" r="8" fill="#52c41a" stroke="#52c41a" stroke-width="1"/>
+  <text x="660" y="405" text-anchor="middle" font-family="Arial" font-size="10" fill="#000000">
+    Joint
+  </text>
+
+  <line x1="668" y1="390" x2="700" y2="390" stroke="#1890ff" stroke-width="3"/>
+  <circle cx="700" cy="390" r="8" fill="#fa8c16" stroke="#fa8c16" stroke-width="1"/>
+  <text x="700" y="405" text-anchor="middle" font-family="Arial" font-size="10" fill="#000000">
+    End
+  </text>
+
+  <!-- Kinematic Process -->
+  <rect x="550" y="440" width="280" height="100" fill="#f6ffed" stroke="#52c41a" stroke-width="2" rx="10" ry="10"/>
+  <text x="690" y="465" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Kinematic Process
+  </text>
+  <text x="690" y="485" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    1. Define joint constraints
+  </text>
+  <text x="690" y="500" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    2. Calculate transformation matrices
+  </text>
+  <text x="690" y="515" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    3. Solve forward/inverse kinematics
+  </text>
+  <text x="690" y="530" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    4. Apply joint limits
+  </text>
+
+  <!-- Legend -->
+  <rect x="50" y="630" width="300" height="50" fill="#fafafa" stroke="#d9d9d9" stroke-width="1" rx="5" ry="5"/>
+  <text x="60" y="650" text-anchor="start" font-family="Arial" font-size="10" fill="#000000">
+    Links: Rectangles, Joints: Lines with arrows
+  </text>
+  <circle cx="280" cy="645" r="5" fill="#1890ff" stroke="#1890ff" stroke-width="1"/>
+  <text x="290" y="650" text-anchor="start" font-family="Arial" font-size="10" fill="#000000">
+    Base Link
+  </text>
+  <circle cx="280" cy="660" r="5" fill="#52c41a" stroke="#52c41a" stroke-width="1"/>
+  <text x="290" y="665" text-anchor="start" font-family="Arial" font-size="10" fill="#000000">
+    Joint
+  </text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666666" />
+    </marker>
+  </defs>
+</svg>

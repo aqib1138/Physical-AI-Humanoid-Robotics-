@@ -1,0 +1,180 @@
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gazebo Physics Concepts Diagram -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="450" y="40" text-anchor="middle" font-family="Arial" font-size="20" fill="#000000">
+    Gazebo Physics Concepts
+  </text>
+
+  <!-- Title boxes -->
+  <text x="150" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000" font-weight="bold">
+    Physics Engines
+  </text>
+  <text x="450" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000" font-weight="bold">
+    Collision Shapes
+  </text>
+  <text x="750" y="80" text-anchor="middle" font-family="Arial" font-size="14" fill="#000000" font-weight="bold">
+    ROS Integration
+  </text>
+
+  <!-- Physics Engines Section -->
+  <!-- ODE Engine -->
+  <rect x="50" y="100" width="200" height="100" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" rx="10" ry="10"/>
+  <text x="150" y="130" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    ODE (Open Dynamics Engine)
+  </text>
+  <text x="150" y="150" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Default engine, good
+  </text>
+  <text x="150" y="165" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    performance for basic sims
+  </text>
+
+  <!-- Bullet Engine -->
+  <rect x="50" y="220" width="200" height="100" fill="#f0f5ff" stroke="#52c41a" stroke-width="2" rx="10" ry="10"/>
+  <text x="150" y="250" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Bullet Physics
+  </text>
+  <text x="150" y="270" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Advanced features,
+  </text>
+  <text x="150" y="285" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    better contact simulation
+  </text>
+
+  <!-- DART Engine -->
+  <rect x="50" y="340" width="200" height="100" fill="#f6ffed" stroke="#52c41a" stroke-width="2" rx="10" ry="10"/>
+  <text x="150" y="370" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    DART (Dynamic Animation)
+  </text>
+  <text x="150" y="390" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Advanced for humanoid
+  </text>
+  <text x="150" y="405" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    robotics applications
+  </text>
+
+  <!-- Collision Shapes Section -->
+  <!-- Box Shape -->
+  <rect x="350" y="100" width="200" height="60" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="8" ry="8"/>
+  <text x="450" y="125" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Box Shape
+  </text>
+  <rect x="430" y="135" width="40" height="40" fill="#fa8c16" stroke="#d9650f" stroke-width="1"/>
+  <text x="450" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Rectangular solid
+  </text>
+
+  <!-- Sphere Shape -->
+  <rect x="350" y="200" width="200" height="60" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="8" ry="8"/>
+  <text x="450" y="225" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Sphere Shape
+  </text>
+  <circle cx="450" cy="245" r="20" fill="#fa8c16" stroke="#d9650f" stroke-width="1"/>
+  <text x="450" y="290" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Spherical object
+  </text>
+
+  <!-- Cylinder Shape -->
+  <rect x="350" y="300" width="200" height="60" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="8" ry="8"/>
+  <text x="450" y="325" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Cylinder Shape
+  </text>
+  <ellipse cx="450" cy="345" rx="20" ry="10" fill="#fa8c16" stroke="#d9650f" stroke-width="1"/>
+  <rect x="430" y="345" width="40" height="30" fill="#fa8c16" stroke="#d9650f" stroke-width="1"/>
+  <text x="450" y="390" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Cylindrical object
+  </text>
+
+  <!-- Mesh Shape -->
+  <rect x="350" y="400" width="200" height="80" fill="#fff2e8" stroke="#fa8c16" stroke-width="2" rx="8" ry="8"/>
+  <text x="450" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Mesh Shape
+  </text>
+  <polygon points="430,450 450,430 470,450 450,470" fill="#fa8c16" stroke="#d9650f" stroke-width="1"/>
+  <text x="450" y="490" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Complex geometry
+  </text>
+  <text x="450" y="505" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    from 3D models
+  </text>
+
+  <!-- ROS Integration Section -->
+  <!-- Robot Model -->
+  <rect x="650" y="100" width="200" height="80" fill="#f9f0ff" stroke="#722ed1" stroke-width="2" rx="10" ry="10"/>
+  <text x="750" y="125" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Robot Model (URDF)
+  </text>
+  <text x="750" y="145" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Links and Joints
+  </text>
+  <line x1="730" y1="155" x2="770" y2="155" stroke="#722ed1" stroke-width="2"/>
+  <circle cx="730" cy="155" r="3" fill="#722ed1"/>
+  <circle cx="770" cy="155" r="3" fill="#722ed1"/>
+
+  <!-- Gazebo Simulation -->
+  <rect x="650" y="200" width="200" height="80" fill="#f0f9ff" stroke="#1890ff" stroke-width="2" rx="10" ry="10"/>
+  <text x="750" y="225" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Gazebo Simulation
+  </text>
+  <text x="750" y="245" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Physics Engine
+  </text>
+  <text x="750" y="260" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Environment
+  </text>
+
+  <!-- ROS Communication -->
+  <rect x="650" y="300" width="200" height="100" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" rx="10" ry="10"/>
+  <text x="750" y="325" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    ROS Communication
+  </text>
+  <text x="750" y="345" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Topics, Services, Actions
+  </text>
+  <text x="750" y="360" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Robot State Publisher
+  </text>
+  <text x="750" y="375" text-anchor="middle" font-family="Arial" font-size="10" fill="#333333">
+    Joint State Publisher
+  </text>
+
+  <!-- Integration Flow -->
+  <text x="750" y="430" text-anchor="middle" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Integration Flow
+  </text>
+  <line x1="750" y1="180" x2="750" y2="200" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="750" y1="280" x2="750" y2="300" stroke="#1890ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <rect x="50" y="500" width="300" height="120" fill="#fafafa" stroke="#d9d9d9" stroke-width="1" rx="5" ry="5"/>
+  <text x="60" y="520" text-anchor="start" font-family="Arial" font-size="12" fill="#000000" font-weight="bold">
+    Key Concepts:
+  </text>
+  <text x="60" y="540" text-anchor="start" font-family="Arial" font-size="10" fill="#000000">
+  • Physics Engines: ODE, Bullet, DART
+  </text>
+  <text x="60" y="555" text-anchor="start" font-family="Arial" font-size="10" fill="#000000">
+  • Collision Shapes: Box, Sphere, Cylinder, Mesh
+  </text>
+  <text x="60" y="570" text-anchor="start" font-family="Arial" font-size="10" fill="#000000">
+  • ROS Integration: URDF, State Publishers, Topics
+  </text>
+  <text x="60" y="585" text-anchor="start" font-family="Arial" font-size="10" fill="#000000">
+  • Simulation Pipeline: Model → Physics → Communication
+  </text>
+
+  <!-- Process Arrow -->
+  <text x="60" y="610" text-anchor="start" font-family="Arial" font-size="10" fill="#000000" font-weight="bold">
+    Digital Twin Simulation Process:
+  </text>
+  <line x1="60" y1="620" x2="300" y2="620" stroke="#52c41a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="180" y="615" text-anchor="middle" font-family="Arial" font-size="9" fill="#000000">
+    Realistic Simulation
+  </text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666666" />
+    </marker>
+  </defs>
+</svg>
